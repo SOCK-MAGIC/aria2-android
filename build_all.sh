@@ -1,5 +1,12 @@
 #!/bin/bash -e
 
+git clone https://github.com/aria2/aria2.git
+git clone https://github.com/c-ares/c-ares.git
+git clone https://github.com/libexpat/libexpat.git
+git clone https://github.com/libssh2/libssh2.git
+git clone https://github.com/openssl/openssl.git
+git clone https://github.com/madler/zlib.git
+
 # Check NDK and ANDROID_NDK_HOME env
 if [ -z "$NDK" ]; then
 	if [ -z "$ANDROID_NDK_HOME" ]; then
