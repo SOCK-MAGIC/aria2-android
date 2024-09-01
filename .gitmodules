@@ -1,9 +1,0 @@
-[submodule "libexpat"]
-	path = libexpat
-	url = https://github.com/libexpat/libexpat
-[submodule "openssl"]
-	path = openssl
-	url = https://github.com/openssl/openssl
-[submodule "libssh2"]
-	path = libssh2
-	url = https://github.com/libssh2/libssh2
