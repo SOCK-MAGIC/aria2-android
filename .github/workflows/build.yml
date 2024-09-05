@@ -23,10 +23,10 @@ jobs:
       - name: Build
         run: |
           ./build_all.sh
-          rename ./bin/armeabi-v7a/bin/aria2c ./bin/armeabi-v7a/bin/libaria2c.so
-          rename ./bin/arm64-v8a/bin/aria2c ./bin/arm64-v8a/bin/libaria2c.so
-          rename ./bin/x86/bin/aria2c ./bin/x86/bin/libaria2c.so
-          rename ./bin/x86_64/bin/aria2c ./bin/x86_64/bin/libaria2c.so
+          mv ./bin/armeabi-v7a/bin/aria2c ./bin/armeabi-v7a/bin/libaria2c.so
+          mv ./bin/arm64-v8a/bin/aria2c ./bin/arm64-v8a/bin/libaria2c.so
+          mv ./bin/x86/bin/aria2c ./bin/x86/bin/libaria2c.so
+          mv ./bin/x86_64/bin/aria2c ./bin/x86_64/bin/libaria2c.so
 
       - name: Upload build outputs
         uses: actions/upload-artifact@v4
