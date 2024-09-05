@@ -2,7 +2,9 @@
 
 cd libssh2
 echo -e "\n\n----- Build libssh2 (`git describe --tags`) -----"
-./buildconf
+autoreconf -fi
+./configure
+make
 
 INSTALL_DIR="$1"
 
