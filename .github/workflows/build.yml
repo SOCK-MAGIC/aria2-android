@@ -32,4 +32,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: aria2c
-          path: './bin/**/bin/aria2c'
+          path: './bin/**/bin/libaria2c.so'
